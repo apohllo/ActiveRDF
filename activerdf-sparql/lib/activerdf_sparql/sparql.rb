@@ -1,5 +1,5 @@
 # require 'active_rdf'
-require 'queryengine/query2sparql'
+require 'active_rdf/queryengine/query2sparql'
 require 'open-uri'
 require 'cgi'
 require 'rexml/document'
