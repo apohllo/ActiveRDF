@@ -2,3 +2,4 @@ nbproject
 /pkg
 activerdf-sesame/ext/
 .gh_pages
+*.gem

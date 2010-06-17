@@ -79,7 +79,9 @@ module ActiveRDF
         end
 
         # count
-        return results.flatten.inject{|mem,c| mem + c} if q.count?
+        #puts  "Inspect #{results.size} #{results.map{|e| e.class}.join(",")}"
+        #return results.flatten.inject(0){|mem,c| puts "Inject #{mem} #{c} #{c.class}"; mem + c } if q.count?
+        return results.flatten.size if q.count?
 
         # filter the empty results
         results.reject {|ary| ary.empty? }
